@@ -14,7 +14,7 @@ export default withRouter(() => (
         >
           <Switch location={location}>
             <Route
-              path="/"
+              path="/bryllup"
               exact
               render={() => (
                 <Page heading="Mathilde & Torleif">
@@ -41,7 +41,7 @@ export default withRouter(() => (
               )}
             />
             <Route
-              path="/about"
+              path="/bryllup/about"
               exact
               render={() => <Page heading="About" />}
             />

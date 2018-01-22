@@ -9,10 +9,10 @@ const Page = ({ heading, className, children }) => (
 );
 
 export default styled(Page)`
-  padding: 20px;
-
   h1 {
     text-transform: uppercase;
-    /* text-align: center; */
+    padding: 0 20px;
+    margin: 40px 0;
+    text-align: center;
   }
 `;

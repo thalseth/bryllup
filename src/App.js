@@ -58,6 +58,14 @@ export default () => (
           </p>
         </section>
         <section>
+          <h2>Bekledning</h2>
+          <p>
+            <a href="https://goo.gl/cmXfoi" target="_blank">
+              Smoking / Mørk dress
+            </a>
+          </p>
+        </section>
+        <section>
           <h2>Matallergi</h2>
           <p>
             Har du matallergi? Send oss en melding så gir vi beskjed til kokken.

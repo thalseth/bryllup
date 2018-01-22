@@ -28,6 +28,7 @@ const StyledContainer = styled.div`
 
   section {
     margin-bottom: 40px;
+    padding: 0 20px;
   }
 `;
 

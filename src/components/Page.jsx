@@ -12,6 +12,7 @@ export default styled(Page)`
   padding: 20px;
 
   h1 {
+    text-transform: uppercase;
     /* text-align: center; */
   }
 `;

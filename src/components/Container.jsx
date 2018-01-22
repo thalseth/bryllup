@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Page from "./Page";
+import DateInfoCard from "./DateInfoCard";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -14,6 +15,19 @@ const StyledContainer = styled.div`
     will-change: transform;
     background-color: white;
     min-height: 100vh;
+  }
+
+  ${DateInfoCard} {
+    border-top: 1px solid black;
+
+    &:last-of-type {
+      border-bottom: 1px solid black;
+      margin-bottom: 30px;
+    }
+  }
+
+  section {
+    margin-bottom: 40px;
   }
 `;
 

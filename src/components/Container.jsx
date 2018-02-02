@@ -10,6 +10,13 @@ const StyledContainer = styled.div`
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
+  max-width: 550px;
+  margin: 10px auto;
+  padding: 0 10px;
+  @media (min-width: 400px) {
+    padding: 0 20px;
+    margin: 20px auto;
+  }
 
   ${Page} {
     will-change: transform;

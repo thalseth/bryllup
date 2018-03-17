@@ -14,7 +14,7 @@ const DateInfoCard = ({ date, events, className }) => {
       </div>
       {events && (
         <div className="info">
-          {events.map(({ time, location, link, description }) => (
+          {events.map(({ time, location, link, description, info }) => (
             <div className="info__block" key={`${time}-${location}`}>
               <p className="info__time">{time}</p>
               <p className="info__location">
@@ -30,6 +30,7 @@ const DateInfoCard = ({ date, events, className }) => {
                 )}{" "}
                 | {description}
               </p>
+              {info && <p className="info__extra">{info}</p>}
             </div>
           ))}
         </div>
@@ -47,7 +48,7 @@ export default styled(DateInfoCard)`
   .date {
     text-align: center;
     padding: 10px 5%;
-    border-right: 1px solid black;
+    border-right: 2px solid #f3f3f3;
     text-transform: uppercase;
     font-weight: lighter;
 
@@ -79,7 +80,8 @@ export default styled(DateInfoCard)`
       font-weight: bold;
     }
 
-    &__location {
+    &__location,
+    &__extra {
       font-weight: lighter;
       text-transform: uppercase;
     }

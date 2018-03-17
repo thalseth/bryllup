@@ -25,17 +25,16 @@ const StyledContainer = styled.div`
   }
 
   ${DateInfoCard} {
-    border-top: 1px solid black;
+    border-top: 2px solid #f3f3f3;
 
     &:last-of-type {
-      border-bottom: 1px solid black;
-      margin-bottom: 30px;
+      border-bottom: 2px solid #f3f3f3;
     }
   }
 
   section {
-    margin-bottom: 40px;
-    padding: 0 20px;
+    padding: 20px;
+    border-bottom: 2px solid #f3f3f3;
   }
 `;
 

@@ -1,9 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import Heads from "./Heads";
 
-const Page = ({ heading, className, children }) => (
+const Page = ({ heading, className, children, icon }) => (
   <article className={`page ${className}`}>
-    <h1 className="page__heading">{heading}</h1>
+    <header className="header">
+      <div className="header__container">
+        <h1 className="page__heading">{heading}</h1>
+        <Heads />
+      </div>
+    </header>
     {children}
   </article>
 );
@@ -11,8 +17,19 @@ const Page = ({ heading, className, children }) => (
 export default styled(Page)`
   h1 {
     text-transform: uppercase;
-    padding: 0 20px;
-    margin: 40px 0;
-    text-align: center;
+    padding-right: 20px;
+    display: none;
+    @media (min-width: 500px) {
+      display: block;
+    }
+  }
+
+  .header {
+    padding: 20px 20px 0;
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Page from "./Page";
 import DateInfoCard from "./DateInfoCard";
+import color from "../color";
 
 const StyledContainer = styled.div`
   display: flex;
@@ -25,16 +26,16 @@ const StyledContainer = styled.div`
   }
 
   ${DateInfoCard} {
-    border-top: 2px solid #f3f3f3;
+    border-top: 1px solid ${color.border};
 
     &:last-of-type {
-      border-bottom: 2px solid #f3f3f3;
+      border-bottom: 1px solid ${color.border};
     }
   }
 
   section {
     padding: 20px;
-    border-bottom: 2px solid #f3f3f3;
+    border-bottom: 1px solid ${color.border};
   }
 `;
 

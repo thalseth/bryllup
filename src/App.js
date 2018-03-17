@@ -3,6 +3,59 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Container from "./components/Container";
 import Page from "./components/Page";
 import DateInfoCard from "./components/DateInfoCard";
+import { injectGlobal } from "styled-components";
+import color from "./color";
+
+injectGlobal`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  #root,
+  body,
+  html {
+    height: 100vh;
+    background-color: ${color.background};
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  p {
+    margin: 0 0 0.75em;
+  }
+
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0 0 0.5em;
+  }
+
+`;
 
 export default () => (
   <Router>
@@ -37,7 +90,7 @@ export default () => (
           ]}
         />
         <section>
-          <h2>Gaveønsker</h2>
+          <h2>Ønsker</h2>
           <p>
             Vi ønsker oss mange gode klemmer, men for de som ønsker å gi noe
             annet i tillegg kan dere sjekke ut gaveønsker under:
@@ -85,9 +138,10 @@ export default () => (
           </p>
         </section>
         <section>
-          <h2>Matallergi</h2>
+          <h2>Mat</h2>
           <p>
-            Har du matallergi? Send oss en melding så gir vi beskjed til kokken.
+            Har du matallergi? Er du veganer, gravid eller bare kresen? Send oss
+            en melding så gir vi beskjed til kokken.
           </p>
         </section>
         <section>
@@ -104,9 +158,9 @@ export default () => (
           </p>
           <p>
             Thon Hotel Orion er ett alternativ som ligger rett ved
-            Snekkerbrakken. Vi har reservert 20 superior rom til kr 1625.-
+            Snekkerbrakken. Vi har reservert 20 superiorrom til kr 1625.-
             enkelt, og kr 1925.- for dobbelt per natt. Referansenummer{" "}
-            <b>2547851</b> oppgis ved bestilling.
+            <b>2547851</b> oppgis ved bestilling på tlf{" "}
             <a
               href="tel:+4755308763"
               value="+4755308763"
@@ -114,7 +168,18 @@ export default () => (
               rel="noopener noreferrer"
             >
               +47 55 30 87 63
-            </a>
+            </a>.
+          </p>
+          <p>
+            Husk å sjekke{" "}
+            <a
+              href="https://www.google.no/maps/search/Hotell+bergen/@60.3961769,5.3152299,15z/data=!4m5!2m4!5m3!5m2!1s2018-05-25!2i2?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              hotelloversikt
+            </a>{" "}
+            for bedre tilbud.
           </p>
           <p>
             Husk å bestille i god tid, helst i går. Festspillene i Bergen
@@ -127,6 +192,10 @@ export default () => (
             Har du en kul idè du ønsker å dele med oss eller spørsmål må du
             skrike ut! Eventuelt send oss en melding (du kan trykke på lenkene
             på mobil)
+          </p>
+          <p>
+            Talere / Musikere / Standupere møter til audition... neida... det
+            holder å melde i fra til Hanna Viola.
           </p>
           <p>
             <a href="sms:‭+47 415 10 098‬" title="Send melding til Mathilde">

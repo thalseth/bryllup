@@ -1,6 +1,7 @@
 import React from "react";
 // import PropTypes from "prop-types";
 import styled from "styled-components";
+import color from "../color";
 
 const DateInfoCard = ({ date, events, className }) => {
   const dateObj = new Date(date);
@@ -47,8 +48,8 @@ export default styled(DateInfoCard)`
 
   .date {
     text-align: center;
-    padding: 10px 5%;
-    border-right: 2px solid #f3f3f3;
+    padding: 10px 20px;
+    border-right: 1px solid ${color.border};
     text-transform: uppercase;
     font-weight: lighter;
 

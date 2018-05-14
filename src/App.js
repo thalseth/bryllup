@@ -66,9 +66,11 @@ export default () => (
           events={[
             {
               time: "19:00",
-              location: "Hemmelig sted",
-              description: "Dagen før dagen",
-              info: "Enkel servering | Smart casual"
+              location: "Persenbakken 32",
+              description: "Den nye hagen!",
+              info: "Grillings | Smart casual",
+              link:
+                "https://www.google.com/maps/place/Persenbakken+32,+5034+Bergen/@60.4029843,5.3186585,15.25z/data=!4m13!1m7!3m6!1s0x463cfea1afdab54f:0x8271f37dd4d231ff!2sPersenbakken+32,+5034+Bergen!3b1!8m2!3d60.4036866!4d5.3306091!3m4!1s0x463cfea1afdab54f:0x8271f37dd4d231ff!8m2!3d60.4036866!4d5.3306091"
             }
           ]}
         />
@@ -195,7 +197,7 @@ export default () => (
           </p>
           <p>
             Talere / Musikere / Standupere møter til audition... neida... det
-            holder å melde i fra til Hanna Viola.
+            holder å melde fra til Hanna Viola.
           </p>
           <p>
             <a href="sms:‭+47 415 10 098‬" title="Send melding til Mathilde">
